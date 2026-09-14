@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>gwzwatch.pl — wracamy po Jom Kipur</title>
+<style>
+  :root {
+    --blue-dark: #0c2f52;
+    --blue: #185fa5;
+    --gold: #c9a44c;
+    --cream: #faf6ec;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #1a4d80 0%, #123a63 45%, #081c33 100%);
+    color: var(--cream);
+    padding: 24px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .card {
+    max-width: 560px;
+    width: 100%;
+  }
+  .illustration {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 28px;
+    display: block;
+  }
+  .stars-row {
+    letter-spacing: 10px;
+    color: var(--gold);
+    font-size: 15px;
+    margin-bottom: 18px;
+    opacity: 0.9;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 6px;
+    color: var(--cream);
+    letter-spacing: 0.3px;
+  }
+  .hebrew {
+    font-size: 30px;
+    margin: 4px 0 22px;
+    color: var(--gold);
+    direction: rtl;
+  }
+  .transliteracja {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #cfe0f0;
+    opacity: 0.85;
+    margin: 0 0 34px;
+  }
+  .line {
+    width: 64px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.6;
+    margin: 0 auto 30px;
+  }
+  .footnote {
+    font-size: 13px;
+    color: #9db6d1;
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    letter-spacing: 0.5px;
+  }
+  .site-name {
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    color: #6f8db0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <svg class="illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Delikatna poświata -->
+      <circle cx="100" cy="90" r="78" fill="none" stroke="#c9a44c" stroke-opacity="0.25" stroke-width="1"/>
+      <!-- Gwiazda Dawida -->
+      <g transform="translate(100,88)">
+        <polygon points="0,-52 45,26 -45,26" fill="none" stroke="#c9a44c" stroke-width="3"/>
+        <polygon points="0,52 45,-26 -45,-26" fill="none" stroke="#c9a44c" stroke-width="3"/>
+      </g>
+      <!-- Delikatny łuk pod gwiazdą -->
+      <path d="M 55,150 A 50,18 0 0 0 145,150" fill="none" stroke="#c9a44c" stroke-opacity="0.55" stroke-width="1.5"/>
+      <!-- Półksiężyc — nawiązanie do wieczoru Kol Nidre -->
+      <path d="M 108,146 a 9,9 0 1 0 0,10 a 7,7 0 1 1 0,-10 Z" fill="#e7d3a1" opacity="0.9"/>
+      <text x="100" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6f8db0" letter-spacing="1">תשפ״ז</text>
+    </svg>
+
+    <div class="stars-row">✡ &nbsp; ✡ &nbsp; ✡</div>
+
+    <h1>Zapraszam po Jom Kipur</h1>
+
+    <div class="hebrew">גמר חתימה טובה</div>
+    <div class="transliteracja">Gmar Chatima Tova</div>
+
+    <div class="line"></div>
+
+    <p class="footnote">Serwis jest chwilowo niedostępny — materiały na Walne Zgromadzenie<br/>pojawią się tutaj po zakończeniu świąt.</p>
+    <div class="site-name">gwzwatch.pl</div>
+  </div>
+</body>
+</html>
